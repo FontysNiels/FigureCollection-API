@@ -22,7 +22,7 @@ jobs:
       
       - name: Build image
         run: >
-          sudo docker build . --file Dockerfile
+          sudo docker build . --file FigureCollection/Dockerfile
           --tag niels040/figure-colldction-s3:latest-backend
       
       - name: Push to registry
