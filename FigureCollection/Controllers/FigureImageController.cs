@@ -1,4 +1,5 @@
-﻿using FigureCollection.Migrations;
+﻿using FigureCollection.Classes;
+using FigureCollection.Migrations;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

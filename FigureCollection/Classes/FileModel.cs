@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace FigureCollection
+namespace FigureCollection.Classes
 {
     public class FileModel
     {

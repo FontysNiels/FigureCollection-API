@@ -1,11 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace FigureCollection
+
+namespace FigureCollection.Classes
 {
-    public class Line
+    public class Edition
     {
         [Key]
         public int id { get; set; }
         public string name { get; set; } = string.Empty;
-        
+
     }
 }

@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using FigureCollection;
 using FigureCollection.Data;
+using FigureCollection.Classes;
 
 namespace FigureCollection.Controllers
 {

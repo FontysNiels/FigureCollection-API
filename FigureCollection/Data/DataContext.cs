@@ -1,4 +1,4 @@
-﻿using FigureCollection;
+﻿using FigureCollection.Classes;
 using FigureCollection.Migrations;
 using Microsoft.EntityFrameworkCore;
 

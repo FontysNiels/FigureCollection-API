@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace FigureCollection
+
+namespace FigureCollection.Classes
 {
-    public class Manufacturer
+    public class Line
     {
         [Key]
         public int id { get; set; }

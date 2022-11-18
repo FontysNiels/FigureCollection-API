@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FigureCollection
+namespace FigureCollection.Classes
 {
     public class Figure
     {
