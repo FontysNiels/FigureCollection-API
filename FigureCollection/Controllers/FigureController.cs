@@ -176,7 +176,7 @@ namespace FigureCollection.Controllers
             var figure = await _context.Figures.FindAsync(id);
             if (figure == null)
             {
-                return BadRequest("Hero Not Found.");
+                return BadRequest("Figure Not Found.");
             }
 
             _context.Figures.Remove(figure);
