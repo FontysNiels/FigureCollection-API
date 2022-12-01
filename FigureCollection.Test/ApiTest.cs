@@ -44,6 +44,7 @@ namespace FigureCollection.Test
         {
             var webAppFactory = new WebApplicationFactory<Program>();
             _httpClient = webAppFactory.CreateDefaultClient();
+            //CreateClient
         }
 
         [TestMethod]
