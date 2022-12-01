@@ -10,7 +10,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-build:
+  build:
     name: Build and analyze
     runs-on: windows-latest
     steps:
