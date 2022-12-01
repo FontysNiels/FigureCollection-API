@@ -135,7 +135,7 @@ namespace FigureCollection.Controllers
                 return BadRequest("Brand Not Found.");
             }
             var manufacturer = await _context.Manufacturers.FindAsync(request.Manufacturer.id);
-            if (brand == null)
+            if (manufacturer == null)
             {
                 return BadRequest("Manufacturer Not Found.");
             }

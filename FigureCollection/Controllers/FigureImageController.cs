@@ -53,7 +53,6 @@ namespace FigureCollection.Controllers
         [HttpGet("PreviewImages/")]
         public async Task<ActionResult<IEnumerable<FigureImage>>> getAllFistImages()
         {
-            //var s = await _context.FigureImages.Include(x => x.figure).GroupBy(o => o.figure.id).Select(g => g.OrderByDescending(o => o.ImgData).FirstOrDefault()).ToListAsync();
             var s = await _context.FigureImages.Include(x => x.figure).GroupBy(o => o.figure.id).Select(g => g.FirstOrDefault()).ToListAsync();
             return Ok(s);
         }
