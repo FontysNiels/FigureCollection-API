@@ -29,7 +29,7 @@ namespace FigureCollection.Controllers
         }
         //GET ON ID
         [HttpGet("{id}")]
-        public async Task<ActionResult<Figure>> Get(int id)
+        public async Task<ActionResult<Figure>> GetById(int id)
         {
             var figure =  _context.Figures.Where(f => f.id == id)
                                             .Include(x => x.Brand)
@@ -39,7 +39,7 @@ namespace FigureCollection.Controllers
                                             .Include(x => x.Edition);
             if (figure == null)
             {
-                return BadRequest("Hero Not Found.");
+                return BadRequest("Figure Not Found.");
             }
             return Ok(figure);
         }
