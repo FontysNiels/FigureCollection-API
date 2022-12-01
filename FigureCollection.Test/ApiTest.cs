@@ -42,13 +42,8 @@ namespace FigureCollection.Test
             size = 0,
             scale = 0
         };
-        public static int NewestFigureId;
         public ApiTest()
         {
-            //var webAppFactory = new WebApplicationFactory<Program>();
-            //_httpClient = webAppFactory.CreateDefaultClient();
-            //CreateClient
-
             var application = new FakeProgram();
 
             using (var scope = application.Services.CreateScope())
@@ -81,7 +76,6 @@ namespace FigureCollection.Test
 
             List<Figure> AllFigures = JsonConvert.DeserializeObject<List<Figure>>(stringResult);
             Figure LastAddedFigure = AllFigures[AllFigures.Count-1];
-            NewestFigureId = AllFigures[AllFigures.Count-1].id;
 
             Assert.AreEqual(LastAddedFigure.name, NewFigure.name);
         }
